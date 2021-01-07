@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPeminjaman"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+         <EditText
+             android:id="@+id/IDadd"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Nama Anggota"
+              android:textStyle="bold"
+              android:textSize="15sp"
+              />
+            <EditText
+                android:id="@+id/AddNamaAnggo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Anggota"
+                android:textSize="14sp"
+                android:inputType="textCapSentences"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul buku"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Addjdlbk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Buku"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Peminjaman"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Add_tgl_pinjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Tanggal Peminjaman"
+                android:textSize="15sp"
+                android:inputType="date"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pengembalian"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+            <EditText
+                android:id="@+id/AddPegembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Tanggal Pemngembalian"
+                android:textSize="15sp"
+                android:inputType="date"
+                />
+            <TextView
+                android:id="@+id/txv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/Addstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_Prosess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengembalian"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
